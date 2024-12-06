@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What If</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- STARTER PROMPT -->
+    <div id="setup">
+        <div class="setup-modal">
+            <h1 class="setup-heading">Welcome to <span>What If</span>!</h1>
+            <div id="setup_step_1" class="setup-step">
+                <p class="setup-text">Let's get you started. How many players will be playing the game?</p>
+                <input type="number" id="number_of_players" min="2" max="8" value="2">
+                <button type="button">Next</button>
+            </div>
+            <div id="setup_step_2" class="setup-step">
+                <p class="setup-text">Please enter your names</h2>
+                <div id="setup_player_names"></div>
+                <button type="button">Start Game</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOARD -->
+    <div id="board"></div>
+
+    <!-- PROMPT -->
+    <div id="prompt">
+        <p>Player <span id="prompt_player_turn"></span>'s Turn</p>
+        <button id="roll_dice">Roll Dice</button>
+        <div>
+            <div id="dice_1"></div>
+            <div id="dice_2"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

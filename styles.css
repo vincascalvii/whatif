@@ -1,0 +1,56 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#setup_step_2 {
+    display: none
+}
+
+#board {
+    display: none;
+    grid-template-columns: repeat(10, 120px);
+    grid-template-rows: repeat(60, 120px);
+    gap: 10px;
+    width: 1290px;
+    margin: 40px auto;
+}
+
+#board .tile {
+    position: relative;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    width: 120px;
+    height: 120px;
+}
+
+#board .tile-empty {
+    background-color: transparent;
+    border: 1px solid transparent;
+    pointer-events: none;;
+}
+
+#board .tile-players {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.player {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+#prompt {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
